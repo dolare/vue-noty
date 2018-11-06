@@ -1,0 +1,22 @@
+{
+  "name": "@dolare/noty-vue",
+  "version": "1.0.3",
+  "description": "\"noty vue full feature\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dolare/vue-noty.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dolare/vue-noty/issues"
+  },
+  "homepage": "https://github.com/dolare/vue-noty#readme",
+  "dependencies": {
+    "noty": "^3.2.0-beta"
+  }
+}

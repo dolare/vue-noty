@@ -1,6 +1,6 @@
 {
   "name": "@dolare/noty-vue",
-  "version": "1.0.6",
+  "version": "1.1.2",
   "description": "\"noty vue full feature\"",
   "main": "index.js",
   "scripts": {

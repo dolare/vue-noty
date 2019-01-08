@@ -1,5 +1,5 @@
 import Noty from 'noty'
-import './styles.less'
+import 'noty/lib/noty.css'
 
 const defaults = {
 	layout: 'topRight',
@@ -14,8 +14,6 @@ const VueNoty = {
 	
 	setOptions (opts) {
 		this.options = Object.assign({}, defaults, opts)
-		this.prototype.closeAll = Noty.closeAll
-		this.prototype.setMaxVisible = Noty.setMaxVisible
 		return this
 	},
 
@@ -26,6 +24,22 @@ const VueNoty = {
 		})
 
 		return new Noty(params).show()
+	},
+
+	closeAll (text = null) {
+		if (text) {
+			Noty.closeAll(text)
+		} else {
+			Noty.closeAll()
+		}
+	},
+
+	setMaxVisible(num, text = null) {
+		if (text) {
+			Noty.setMaxVisible(num, text)
+		} else {
+			Noty.setMaxVisible(num)
+		}
 	},
 
 	success (text, opts = {}) {
